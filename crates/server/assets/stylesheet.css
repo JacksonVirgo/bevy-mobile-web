@@ -1,0 +1,34 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+canvas {
+  position: fixed;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+#loading {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  background: #000;
+  color: #fff;
+  font: 700 clamp(1rem, 3vmin, 2rem) system-ui, sans-serif;
+  transition: opacity 180ms ease-out;
+}
+
+#loading.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
